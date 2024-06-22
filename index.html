@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>hi</h1>
+    <header class="heading">Music Player using Html , Css and JavaScript</header>
+    <section class="Container">
+        <div class="top">
+            <span>Tum Hi Aana</span>
+            <span>Jubin Nautiyal</span>
+        </div>
+        <div class="middle">
+            <img src="Images/img5.jpg" alt="image">
+        </div>
+        <div class="bottom">
+            <div class="time">
+                <span>0:00</span>
+                <span>4:34</span>
+            </div>
+            <div class="range">
+                <input type="range">
+            </div>
+            <div class="controls">
+                <button class="prev"><img src="./Images/backward-step-solid.svg" alt="icon"></button>
+                <button class="play_pause"><img src="./Images/circle-play-solid.svg" alt="icon"></button>
+                <button class="next"><img src="./Images/forward-step-solid.svg" alt="icon"></button>
+            </div>
+        </div>
+    </section>
     <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
