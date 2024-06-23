@@ -12,27 +12,29 @@
     <header class="heading">Music Player using Html , Css and JavaScript</header>
     <section class="Container">
         <div class="top">
-            <span>Tum Hi Aana</span>
-            <span>Jubin Nautiyal</span>
+            <span id="songName">Tum Hi Aana</span>
+            <span id="singerName">Jubin Nautiyal</span>
         </div>
         <div class="middle">
-            <img src="Images/img5.jpg" alt="image">
+            <img src="Images/img5.jpg" id="profileImage" alt="image">
         </div>
         <div class="bottom">
             <div class="time">
-                <span>0:00</span>
-                <span>4:34</span>
+                <span id="crrTime">0:00</span>
+                <span id="duration">4:34</span>
             </div>
             <div class="range">
-                <input type="range">
+                <input type="range" value="0" min="0" id="timeLine" />
             </div>
             <div class="controls">
                 <button class="prev"><img src="./Images/backward-step-solid.svg" alt="icon"></button>
-                <button class="play_pause"><img src="./Images/circle-play-solid.svg" alt="icon"></button>
+                <button class="play_pause"><img src="./Images/circle-play-solid.svg" id="play" alt="icon"></button>
                 <button class="next"><img src="./Images/forward-step-solid.svg" alt="icon"></button>
+                <div id="volumeBox"><ion-icon id="volumeIcon" name="volume-high"></ion-icon ><input type="range" id="volume"min="0" max="1" step="0.01" value="1"></div>
             </div>
         </div>
     </section>
+    <audio id="audio" src=""></audio>
     <script src="main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
